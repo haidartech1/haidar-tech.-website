@@ -4176,3 +4176,116 @@ select:focus-visible {
         transition-duration: 0.01ms !important;
     }
 }
+/* =========================================
+   HAIDAR TECH SERVICES — EXPERIENCE CARD FIX
+========================================= */
+
+.experience-card {
+    background: linear-gradient(145deg, #171717, #080808) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 193, 7, 0.35);
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+    min-width: 0;
+}
+
+.experience-card .experience-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #3b3b3b;
+}
+
+.experience-card .experience-card-header span {
+    color: #ffffff !important;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.experience-card .experience-card-header span:last-child {
+    color: #ffc107 !important;
+}
+
+.experience-card .experience-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #303030;
+}
+
+.experience-card .experience-line span {
+    color: #ffffff !important;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.experience-card .experience-line strong {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #ffc107 !important;
+    color: #080808 !important;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.experience-card .experience-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 23px;
+}
+
+.experience-card .experience-card-footer span {
+    color: #ffc107 !important;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    line-height: 1.6;
+}
+
+/* Mobile phone improvements */
+@media (max-width: 650px) {
+    .experience-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .experience-card {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .experience-card .experience-card-header span {
+        font-size: 11px;
+    }
+
+    .experience-card .experience-line span {
+        font-size: 14px;
+    }
+
+    .experience-card .experience-card-footer {
+        gap: 12px;
+    }
+
+    .experience-card .experience-card-footer span {
+        font-size: 11px;
+    }
+}
+
