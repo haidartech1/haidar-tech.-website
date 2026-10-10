@@ -3722,3 +3722,457 @@ button:focus-visible {
         transform: none;
     }
 }
+
+/* =========================================================
+   HAIDAR TECH — FINAL READABILITY & MOBILE IMPROVEMENTS
+   Keep this block at the VERY END of style.css
+========================================================= */
+
+/* 1. Larger, clearer company name */
+.brand-text strong {
+    color: #ffffff !important;
+    font-size: clamp(17px, 1.6vw, 22px);
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: 0.025em;
+}
+
+.brand-text small {
+    color: #f1f1f1 !important;
+    font-size: clamp(10px, 1vw, 12px);
+    line-height: 1.5;
+}
+
+/* 2. Ensure dashboard text is white on its dark background */
+.dashboard-card,
+.dashboard-card h3,
+.dashboard-card p,
+.dashboard-card strong,
+.dashboard-card span,
+.dashboard-card .dashboard-title,
+.dashboard-card .dashboard-brand,
+.dashboard-card .dashboard-footer,
+.dashboard-card .progress-heading {
+    color: #ffffff;
+}
+
+.dashboard-card .dashboard-brand span,
+.dashboard-card .metric span {
+    color: #e2e2e2;
+}
+
+.dashboard-card .status-badge {
+    color: #ffffff;
+    background: #242424;
+}
+
+.dashboard-card .metric {
+    background: #1b1b1b;
+    border-color: #444444;
+}
+
+.dashboard-card .metric strong {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.dashboard-card .dashboard-footer {
+    border-top: 1px solid #444444;
+}
+
+/* 3. White text for Strategy, Design, Development and Support
+   when these elements appear on dark backgrounds */
+.strategy-card,
+.design-card,
+.development-card,
+.support-card,
+.strategy-card h2,
+.strategy-card h3,
+.strategy-card p,
+.design-card h2,
+.design-card h3,
+.design-card p,
+.development-card h2,
+.development-card h3,
+.development-card p,
+.support-card h2,
+.support-card h3,
+.support-card p {
+    color: #ffffff !important;
+}
+
+/* Common dark sections and dark cards */
+.section-dark,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4,
+.section-dark p,
+.section-dark li,
+.section-dark strong,
+.section-dark .process-keyword,
+.why-section,
+.why-section h3,
+.why-section p,
+.why-section .principle p,
+.cta-box,
+.cta-box h2,
+.cta-box h3,
+.cta-box p,
+.contact-direct,
+.contact-direct h2,
+.contact-direct p,
+.about-card,
+.about-card h2,
+.about-card h3,
+.about-card p,
+.floating-about-card,
+.floating-about-card h3,
+.floating-about-card p {
+    color: #ffffff;
+}
+
+/* Keep gold and red accents visible */
+.section-dark .section-label,
+.why-section .section-label,
+.cta-box .section-label,
+.section-dark .process-keyword {
+    color: #ffc107;
+}
+
+/* 4. Make service/process cards readable if they are dark */
+.service-card,
+.process-card {
+    color: #080808;
+}
+
+.service-card h3,
+.service-card p,
+.process-card h3,
+.process-card p {
+    color: inherit;
+}
+
+/* Explicit styles for dark versions of those cards */
+.service-card.dark-card,
+.process-card.dark-card,
+.service-card.dark-card h3,
+.service-card.dark-card p,
+.process-card.dark-card h3,
+.process-card.dark-card p {
+    color: #ffffff !important;
+}
+
+/* 5. Improve body readability and prevent horizontal overflow */
+html {
+    scroll-padding-top: 90px;
+}
+
+body {
+    overflow-x: clip;
+    overflow-wrap: break-word;
+    -webkit-text-size-adjust: 100%;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid #ffc107;
+    outline-offset: 3px;
+}
+
+/* 6. Tablet layout improvements */
+@media (max-width: 900px) {
+    .hero-container,
+    .why-grid,
+    .about-preview-grid,
+    .about-grid,
+    .vision-grid,
+    .experience-grid,
+    .contact-conversation {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .hero-container {
+        gap: 35px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-visual {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .dashboard-card {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .floating-card {
+        max-width: 85%;
+    }
+}
+
+/* 7. Phone layout improvements */
+@media (max-width: 650px) {
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    .header-inner {
+        gap: 10px;
+        min-height: 72px;
+    }
+
+    .brand {
+        min-width: 0;
+        gap: 9px;
+    }
+
+    .brand-logo {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .brand-text {
+        min-width: 0;
+    }
+
+    .brand-text strong {
+        font-size: clamp(14px, 4vw, 18px);
+        overflow-wrap: normal;
+    }
+
+    .brand-text small {
+        font-size: 9px;
+    }
+
+    .mobile-toggle {
+        flex-shrink: 0;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 115px 0 65px;
+    }
+
+    .hero h1 {
+        font-size: clamp(34px, 9vw, 52px);
+        line-height: 1.12;
+        letter-spacing: -0.035em;
+    }
+
+    .hero-description,
+    .section-heading p,
+    .about-content > p,
+    .why-content > p,
+    .page-hero p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn,
+    .cta-box .btn,
+    .contact-direct-actions .btn {
+        width: 100%;
+    }
+
+    .hero-trust {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero-visual {
+        min-height: 0;
+        padding: 35px 0;
+    }
+
+    .dashboard-card {
+        padding: 17px;
+        transform: none;
+        border-radius: 18px;
+    }
+
+    .dashboard-card:hover {
+        transform: none;
+    }
+
+    .dashboard-title h3 {
+        font-size: 20px;
+    }
+
+    .dashboard-metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .dashboard-card .metric {
+        min-width: 0;
+        padding: 12px 10px;
+    }
+
+    .floating-one {
+        top: 0;
+        right: 0;
+    }
+
+    .floating-two {
+        bottom: 0;
+        left: 0;
+    }
+
+    .floating-card {
+        padding: 9px;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .section-heading {
+        display: block;
+        margin-bottom: 32px;
+    }
+
+    .section-heading h2,
+    .why-content h2,
+    .about-content h2,
+    .cta-content h2 {
+        font-size: clamp(28px, 7.5vw, 36px);
+        line-height: 1.2;
+    }
+
+    .solutions-grid,
+    .services-grid,
+    .work-grid,
+    .process-grid,
+    .contact-grid,
+    .values-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .solution-card {
+        min-height: 290px;
+        padding: 25px;
+    }
+
+    .solution-card a {
+        left: 25px;
+    }
+
+    .work-large {
+        min-height: 330px;
+    }
+
+    .service-row {
+        grid-template-columns: 32px minmax(0, 1fr) 20px;
+        gap: 10px;
+    }
+
+    .service-main h3 {
+        font-size: 16px;
+    }
+
+    .service-main p {
+        font-size: 12px;
+    }
+
+    .contact-card:last-child {
+        grid-column: auto;
+    }
+
+    .cta-box,
+    .contact-direct {
+        padding: 30px 22px;
+    }
+
+    .footer-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .floating-whatsapp {
+        right: 16px;
+        bottom: 16px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .back-to-top {
+        right: 20px;
+        bottom: 78px;
+    }
+}
+
+/* 8. Very small phones */
+@media (max-width: 380px) {
+    .brand-text strong {
+        font-size: 13px;
+    }
+
+    .brand-text small {
+        font-size: 8px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .dashboard-metrics {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .dashboard-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .status-badge {
+        align-self: flex-start;
+    }
+}
+
+/* 9. Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
