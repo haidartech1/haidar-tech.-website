@@ -4289,3 +4289,49 @@ select:focus-visible {
     }
 }
 
+/* ==========================================
+   HAIDAR TECH — FINAL TEXT COLOR CORRECTION
+========================================== */
+
+/* Make Understand, Simplify, Build and Improve black */
+.section-dark .why-item h3,
+.section-dark .why-item p {
+    color: #000000 !important;
+}
+
+/* Keep the step numbers clearly visible */
+.section-dark .why-item .why-number {
+    color: #000000 !important;
+    font-weight: 800;
+}
+
+/* Make the Haidar Tech experience card text white */
+.experience-card .experience-card-header span,
+.experience-card .experience-line span,
+.experience-card .experience-line strong,
+.experience-card .experience-card-footer span {
+    color: #ffffff !important;
+}
+
+/* Keep the check marks visible in gold circles */
+.experience-card .experience-line strong {
+    background: #ffc107 !important;
+    color: #080808 !important;
+}
+
+/* Ensure all four strategy labels are white */
+.experience-card .experience-line span {
+    color: #ffffff !important;
+}
+
+/* Make the SMART FAST RELIABLE tagline white */
+.experience-card .experience-card-footer,
+.experience-card .experience-card-footer span {
+    color: #ffffff !important;
+}
+
+/* Keep the 01 — 04 number white too */
+.experience-card .experience-card-header span:last-child {
+    color: #ffffff !important;
+}
+
